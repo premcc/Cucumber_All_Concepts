@@ -27,7 +27,7 @@ public class FacebookLogin {
 	public void he_enters_and(String username, String password) throws Throwable {
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.name("pass")).sendKeys(password);
-		Thread.sleep(4000);
+		
 		driver.findElement(By.name("login")).click();
 	}
 
