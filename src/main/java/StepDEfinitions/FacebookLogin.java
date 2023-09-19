@@ -16,10 +16,8 @@ public class FacebookLogin {
 	@Given("user is on login page22")
 	public void user_is_on_login_page() {
 		String projectPath=System.getProperty("user.dir");
+		driver=WebDriverManager.ChromeDriver().avoidShudownHooks().create();
 		
-		System.setProperty("webdriver.chrome.driver",projectPath+"//Server//chromedriver.exe");
-		
-		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.facebook.com/");
