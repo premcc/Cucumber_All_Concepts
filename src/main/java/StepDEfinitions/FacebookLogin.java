@@ -23,7 +23,7 @@ public class FacebookLogin {
 		driver.get("https://www.facebook.com/");
 	}
 
-	@Then("he enters {string} and {string}")
+	@Then("kjvdkvndkjvnd")
 	public void he_enters_and(String username, String password) throws Throwable {
 		driver.findElement(By.id("email")).sendKeys(username);
 		driver.findElement(By.name("pass")).sendKeys(password);
